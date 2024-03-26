@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-10">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="">Account</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Details
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            {% include 'partials/_messages.html' %}
+
+            <div class="app-table">
+                {% if user_id %}
+                    <table class="table table-stripped table-hover">
+                        <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>First name</th>
+                            <th>Last name</th>
+                            <th>Email address</th>
+                            <th>Available balance</th>
+                            <th>Action</th>
+
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>{{ username }}</td>
+                            <td>{{ first_name }}</td>
+                            <td>{{ last_name }}</td>
+                            <td>{{ email }}</td>
+                            <td>{{ available_balance }}</td>
+                            <td>
+                                <a href="{% url 'account_edit' user_id %}" class="btn btn-secondary btn-sm">Edit</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                {% endif %}
+                {#            <div class="row-cols-md-1">#}
+                {#                <a href="{% url 'add-income'%}" class="btn btn-primary">Add Income</a>#}
+                {#            </div>#}
+                {##}
+                {#            <div class="row-cols-md-2">#}
+                {#                <a href="{% url 'add-income'%}" class="btn btn-primary">Add Income</a>#}
+                {#            </div>#}
+
+                {#            <table class="table table-stripped table-hover">#}
+                {#                        <thead>#}
+                {#                            <tr>#}
+                {#                                <td>#}
+                {#                                    <a href="{% url 'account_edit' user_id %}" class="btn btn-secondary btn-sm">Edit</a>#}
+                {#                                </td>#}
+                {#                                <td>#}
+                {#                                    <a href="{% url 'account_edit' user_id %}" class="btn btn-secondary btn-sm">Edit</a>#}
+                {#                                </td>#}
+                {#                                <td>#}
+                {#                                    <a href="{% url 'account_edit' user_id %}" class="btn btn-secondary btn-sm">Edit</a>#}
+                {#                                </td>#}
+                {#                                <td>#}
+                {#                                    <a href="{% url 'account_edit' user_id %}" class="btn btn-secondary btn-sm">Edit</a>#}
+                {#                                </td>#}
+                {#                            </tr>#}
+                {#                        </thead>#}
+                {##}
+                {#                        <tbody>#}
+                {#                            <tr>#}
+                {#                                <td>{{ username }}</td>#}
+                {#                                <td>{{ first_name }}</td>#}
+                {#                                <td>{{ last_name }}</td>#}
+                {#                                <td>{{ email }}</td>#}
+                {#                                <td>#}
+                {#                                    <a href="{% url 'account_edit' user_id %}" class="btn btn-secondary btn-sm">Edit</a>#}
+                {#                                </td>#}
+                {#                            </tr>#}
+                {#                        </tbody>#}
+                {#                    </table>#}
+            </div>
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-10">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="{% url 'income' %}">Income</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Edit Account
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <form action="{% url 'account_edit' pk=form.instance.pk %}" method="post">
+                    {% csrf_token %}
+                    {% include 'partials/_messages.html' %}
+                    <div class="form-group">
+                        <label for="id_username">Username</label>
+                        <input
+                                type="text"
+                                id="id_username"
+                                class="form-control form-control-sm"
+                                name="username"
+                                value="{{ form.instance.username }}"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="id_email">Email</label>
+                        <input
+                                type="email"
+                                id="id_email"
+                                class="form-control form-control-sm"
+                                name="email"
+                                value="{{ form.instance.email }}"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="id_first_name">First Name</label>
+                        <input
+                                type="text"
+                                id="id_first_name"
+                                class="form-control form-control-sm"
+                                name="first_name"
+                                value="{{ form.instance.first_name }}"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="id_last_name">Last Name</label>
+                        <input
+                                type="text"
+                                id="id_last_name"
+                                class="form-control form-control-sm"
+                                name="last_name"
+                                value="{{ form.instance.last_name }}"
+                        />
+                    </div>
+
+                    <input
+                            type="submit"
+                            value="Save"
+                            class="btn btn-primary btn-sm"
+                    />
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
