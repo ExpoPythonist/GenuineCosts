@@ -21,8 +21,8 @@ python manage.py runserver
 
 # Screenshots 
 
-**Home page**
-![home page](https://github.com/ExpoPythonist/biding-app/blob/master/screenshots/Home.png)
+**Registration Page**
+![home page](https://github.com/ExpoPythonist/biding-app/blob/master/Registration.png)
 
 **Registration page**
 ![registration page](https://github.com/ExpoPythonist/biding-app/blob/master/screenshots/Registration.png)
