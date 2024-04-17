@@ -22,13 +22,13 @@ python manage.py runserver
 # Screenshots 
 
 **Registration Page**
-![home page](https://github.com/ExpoPythonist/GenuineCosts/blob/master/Registration.png)
+![registration page](https://github.com/ExpoPythonist/GenuineCosts/blob/master/Registration.png)
 
-**Registration page**
-![registration page](https://github.com/ExpoPythonist/biding-app/blob/master/screenshots/Registration.png)
+**Login Page**
+![login page](https://github.com/ExpoPythonist/GenuineCosts/blob/master/login.png)
 
-**Marketplace**
-![bid summary page](https://github.com/ExpoPythonist/biding-app/blob/master/screenshots/Marketplace.png)
+**Edit Account**
+![edit account](https://github.com/ExpoPythonist/GenuineCosts/blob/master/edit account.png)
 
 **About page**
 ![About page](https://github.com/ExpoPythonist/biding-app/blob/master/screenshots/About.png)
