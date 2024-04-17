@@ -22,7 +22,7 @@ python manage.py runserver
 # Screenshots 
 
 **Registration Page**
-![home page](https://github.com/ExpoPythonist/biding-app/blob/master/Registration.png)
+![home page](https://github.com/ExpoPythonist/GenuineCosts/blob/master/Registration.png)
 
 **Registration page**
 ![registration page](https://github.com/ExpoPythonist/biding-app/blob/master/screenshots/Registration.png)
