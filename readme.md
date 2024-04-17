@@ -6,7 +6,12 @@ This application was built as a side project, in order to learn how to design an
 
 # Setup
 
+```bash
+pip install -r requirements.txt
+```
+
 **Running locally:**
+
 ```bash
 python manage.py runserver
 ```
