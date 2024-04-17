@@ -28,8 +28,8 @@ python manage.py runserver
 ![login page](https://github.com/ExpoPythonist/GenuineCosts/blob/master/login.png)
 
 **Edit Account**
-![edit account](https://github.com/ExpoPythonist/GenuineCosts/blob/master/edit account.png)
+![edit account](https://github.com/ExpoPythonist/GenuineCosts/blob/master/editaccount.png)
 
-**About page**
-![About page](https://github.com/ExpoPythonist/biding-app/blob/master/screenshots/About.png)
+**Income Page**
+![income](https://github.com/ExpoPythonist/GenuineCosts/blob/master/income.png)
 
